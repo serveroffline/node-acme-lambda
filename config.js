@@ -7,6 +7,8 @@ const productionDirectoryUrl = process.env.ACME_DIRECTORY_URL || 'https://acme-v
 const stagingDirectoryUrl = process.env.ACME_DIRECTORY_URL || 'https://acme-staging.api.letsencrypt.org'
 
 module.exports = {
+  'agent-name': 'ocelotconsulting.node.acme', 
+  'agent-version': '2.0',
   's3-account-bucket': process.env.S3_ACCOUNT_BUCKET || '<your-s3-account-config-bucket>',
   's3-cert-bucket': process.env.S3_CERT_BUCKET || '<your-s3-ssl-cert-bucket>',
   's3-folder': process.env.S3_CERT_FOLDER || '<folder-under-bucket>',
